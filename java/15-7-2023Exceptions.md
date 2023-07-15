@@ -84,44 +84,79 @@ your exception class should end with the name "exception"
 --------------------------------------------------------------
 
 try{
+
 s1;
+
 s2;
+
 s3;
+
  try{
+ 
  s4;
+ 
  s5;
+ 
  s6;
+ 
  }
+ 
  catch(x e){
+ 
  s7;
+ 
  }
+ 
  finally{
+ 
  s8;
+ 
  }
+ 
  s9;
+ 
 }
+
 catch(Y e){
+
 s10;
+
 }
+
 finally{
+
 s11;
+
 }
+
 s12;
 
 case 1: no exception
+
 case 2: ex @s2, handled
+
 Case 3: ex @s2, not handled
+
 Case 4: ex @s5, inner match
+
 Case 5: ex @s5, inner not match, outer matched
+
 Case 6: ex @s5, both not match
 
 Case 7: ex @s7 + catched
+
 Case 8: ex @s7, no match
+
 Case 9: ex @s8, match
+
 Case 10: ex @s8, no match
+
 Case 11: ex @s9, block match
+
 Case 12: ex @s9, no match 
+
 Case 13: ex @10
+
 Case 14: ex @11
 
 
