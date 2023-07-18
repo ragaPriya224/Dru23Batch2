@@ -36,7 +36,15 @@ public class SwitchDemo {
 		switch(a+b+c) {
 
 		}
-
+//byte, short, char, int, string , enums
+		//wrapper classes
+		
+//	boolean, long, float, double -> not allowed
+	
+		int[] mark = new int[10];
+//		mark[5]
+		
+//		heterogenous
 	}
 
 }
