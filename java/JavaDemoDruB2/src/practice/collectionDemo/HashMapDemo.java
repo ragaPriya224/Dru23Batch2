@@ -15,7 +15,7 @@ public class HashMapDemo {
 		foodMap.put(null, 50);
 //		System.out.println(foodMap.containsKey("pizza"));	
 //		System.out.println(foodMap.containsValue(5));	
-//		System.out.println(foodMap.get("burger"));
+		foodMap.get("burger");
 	Set output = foodMap.entrySet();
 	System.out.println(output);
 //	System.out.println(foodMap.);
