@@ -268,3 +268,8 @@ heterogenous no
 null is possible, only once 
 
 4 constructor
+-----------------------------------------------------------------------
+
+MAP
+
+some important methods: put, putIfAbsent, containsKey,containsValue,keySet,remove,clear, isEmpty,size,getOrDefault
