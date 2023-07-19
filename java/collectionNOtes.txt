@@ -273,3 +273,50 @@ null is possible, only once
 MAP
 
 some important methods: put, putIfAbsent, containsKey,containsValue,keySet,remove,clear, isEmpty,size,getOrDefault
+
+---------------------------
+
+ITERATORS:
+Iterator:
+
+for any universal cursor
+-> read, remove 
+method:
+hasNext()
+next()
+remove
+limitations:
+ -> only forward direction
+ -> read , remove
+ -> u cannot replace, u cannot add new object
+ 
+ 
+ --------------------------------------------------------
+ 
+ LIST ITERATOR
+ 
+ Bidirectional 
+ read . remove, replace add new object
+ EG: ListIterator itr = l.listIterator();
+ 
+ FORWARD
+ ------------
+ hasNext
+ next
+ nextIndex
+ 
+ BACKWARD
+ -----------
+ hasprevious
+ previous
+ previousindex
+ 
+ remove()
+ set()
+ add()
+ -------------------------------
+ 
+ 
+ 
+ 
+ 
