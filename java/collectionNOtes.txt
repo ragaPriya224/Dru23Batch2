@@ -212,3 +212,59 @@ removeLast
 best    retrieval	    	       insertion,deletion
 worst   insesrtion/deletion      retrieval 
 ---------------------
+
+SET:
+child interface of collectio 
+dup no
+ins order not maintained
+no specific methods
+underlying: hashtable
+freq operation: search
+null ok
+hetero data
+constructors: https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html
+Load Factor -> After loading how much factor, a new hashset object will be created. That is called as load factor
+
+
+LINKED HASH SET
+
+1.When to go -> ????    When insertion order is preserved
+Underlying DS: hashtable +linkedlist
+version ->1.4version 
+----------------------
+	   Hashset		   LinkedHashSet
+dup        no 		    	   no 
+insorder   no                      yes preserved 
+DS         hashtable               hashtable +linkedList
+---------------------------------------------------------
+
+
+sortedSET
+
+
+sorted set
+child interface of set
+represent group of individual according to some sorting order 
+duplicate -> no
+
+method specific:
+
+first()
+last()
+headSet()
+tailSet()
+subset()
+comparator()
+
+
+--------------------------------------
+Treeset
+
+ds: balanced tree
+dup no
+ins order no
+sorting order ok
+heterogenous no 
+null is possible, only once 
+
+4 constructor
