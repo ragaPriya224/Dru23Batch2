@@ -49,3 +49,274 @@ As such, it has no unimplemented method)
 https://www.baeldung.com/java-concrete-class
 
 
+2.List(I)
+// grocery shop -> duplicate items
+// hotel -> masala dosa & coffee
+
+when you want the insertion order to be maintained, and it must allow duplicate elements means, 
+then we should go for list interface
+
+
+Collection(I)
+|
+List(I)
+
+|
+ArrayList    LinkedList(1.2)     Vector & Stack(1.0)  -> old/legacy classes
+
+3. Set(I)
+
+// dress shop -> unique items
+IF we want to represent group of individual objects as single entity where 
+*  it won't allow duplicate elements 
+* insertion order won't be maintained 
+
+Collection(I)
+|
+Set(I)  
+|
+HashSet(class)
+|
+LinkedHashSet
+
+
+            List          set
+duplicate    yes          no
+ins order    yes          no
+---------------------------
+4. sortedSet(I)
+
+Collection(I)
+|
+Set(I)
+|
+SortedSet(I)
+|
+NavigableSet(I)
+|
+TreeSet(Implementation class)
+
+* duplicate not allowed
+*insert according to sorting order
+
+--------------------------
+5.  navigableSet(I)
+
+* it is a child of sorted set
+* several methods for that navigation purpose
+* implementation class of navigable set is treeset
+
+
+6. : QUEUE(I)
+
+represent group of individual objects prior(before ) to processing, we can go for queue concept
+
+Collection(I)
+||
+
+QUEUE(I)
+
+
+
+PRIORITY QUEUE        BLOCKING QUEUE -> LINKED, PRIORITY 
+
+WE WERE representing a group of individual objects as a single entity 
+----------------------------
+
+7. MAP(I)
+
+if we want to represent a group of objects as key , value pair -> then go for map
+
+Key              value 
+
+vegBriyani      100
+chickenBriyani   200
+coffee            50 
+
+rollID   name
+
+101   anu   -> entity 
+102   aravind
+103    john
+
+ pair of key value is known as entity 
+
+not child interface of collection 
+
+Map(I)
+
+hashMap    weakHashMap IdentityHashMap Hashtable(dictionary)
+linkedHashMap
+
+8.sortedmap(I)  ->
+
+insert a key value pair according to sorting order
+impl classs -> treemap
+
+
+9.navigable map(I)
+
+navigation purposes
+child of sorted map
+
+----------------------IN DEPTHJ NOTES---------------------
+
+Arraylist:
+dup ok
+order ok
+heterogenous data allowed
+null insertion possible 
+DS: resizable/growable array 
+initial capacity of ten.
+
+https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+Constructor:
+
+ArrayList al = new ArrayList();
+ArrayList al = new ArrayList(100);
+
+
+
+best: retrieval 
+worst : insertion/deletion X
+https://www.w3schools.com/java/java_arraylist.asp
+----------------------------------------------------
+LinkedList:
+
+dup ok
+ins ok 
+heterogenous data
+null ins ok
+DS: doub le linked list
+
+constructor:
+LinkedList()
+LinkedList(Collection c)
+
+
+Best: insertion, deletion
+worst: retrieval 
+
+
+METHoDS:
+	addFirst(E e)
+  addLast(E e)
+getFirst
+getLast
+removeFirst
+removeLast
+
+-----------------------------------
+
+      ArrayList                	linkedList
+best    retrieval	    	       insertion,deletion
+worst   insesrtion/deletion      retrieval 
+---------------------
+
+SET:
+child interface of collectio 
+dup no
+ins order not maintained
+no specific methods
+underlying: hashtable
+freq operation: search
+null ok
+hetero data
+constructors: https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html
+Load Factor -> After loading how much factor, a new hashset object will be created. That is called as load factor
+
+
+LINKED HASH SET
+
+1.When to go -> ????    When insertion order is preserved
+Underlying DS: hashtable +linkedlist
+version ->1.4version 
+----------------------
+	   Hashset		   LinkedHashSet
+dup        no 		    	   no 
+insorder   no                      yes preserved 
+DS         hashtable               hashtable +linkedList
+---------------------------------------------------------
+
+
+sortedSET
+
+
+sorted set
+child interface of set
+represent group of individual according to some sorting order 
+duplicate -> no
+
+method specific:
+
+first()
+last()
+headSet()
+tailSet()
+subset()
+comparator()
+
+
+--------------------------------------
+Treeset
+
+ds: balanced tree
+dup no
+ins order no
+sorting order ok
+heterogenous no 
+null is possible, only once 
+
+4 constructor
+-----------------------------------------------------------------------
+
+MAP
+
+some important methods: put, putIfAbsent, containsKey,containsValue,keySet,remove,clear, isEmpty,size,getOrDefault
+
+---------------------------
+
+ITERATORS:
+Iterator:
+
+for any universal cursor
+-> read, remove 
+method:
+hasNext()
+next()
+remove
+limitations:
+ -> only forward direction
+ -> read , remove
+ -> u cannot replace, u cannot add new object
+ 
+ 
+ --------------------------------------------------------
+ 
+ LIST ITERATOR
+ 
+ Bidirectional 
+ read . remove, replace add new object
+ EG: ListIterator itr = l.listIterator();
+ 
+ FORWARD
+ ------------
+ hasNext
+ next
+ nextIndex
+ 
+ BACKWARD
+ -----------
+ hasprevious
+ previous
+ previousindex
+ 
+ remove()
+ set()
+ add()
+ -------------------------------
+ 
+ 
+ 
+ 
+ 
