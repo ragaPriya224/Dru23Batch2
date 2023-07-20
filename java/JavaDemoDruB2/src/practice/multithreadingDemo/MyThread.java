@@ -7,6 +7,8 @@ public class MyThread extends Thread{
 			//			Thread.currentThread().setName("Another thread ");
 			System.out.println(Thread.currentThread().getName() +"child thread");
 		}
+//		System.out.println(Thread.currentThread().set
+
 	}
 	public void run(int i) {
 		System.out.println("hello");
