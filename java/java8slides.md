@@ -6,19 +6,24 @@ JAVA8 FEATURES:
 
 lambda expression: https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_lambdaExpression.jpg
 
-                    https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_DifferentLambdaSyntax.png
+https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_DifferentLambdaSyntax.png
 
-functional interface: https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_interfaceTypes.jpg
+----------------------------------------------------
 
-   what is FI? :  https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_functionalInterface_whatIs.pdf
+functional interface:
+  https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_interfaceTypes.jpg
 
-    y @functionalInterface :  https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_FI_y_annotation.pdf
-  
+   what is FI? : 
+     https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_functionalInterface_whatIs.pdf
+
+y @functionalInterface : 
+    https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_FI_y_annotation.pdf
+  ------------------------------------------------------------------------------------
  default and static methods: 
  
-      default methods: https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_defaultMethod_why.pdf
+  default methods: https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_defaultMethod_why.pdf
       
-      static vs default: https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_staticVsdefault.pdf
+ static vs default: https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_staticVsdefault.pdf
       
 
 streams: streams vs collections: https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/materials/java8_streamVsCollections.pdf
