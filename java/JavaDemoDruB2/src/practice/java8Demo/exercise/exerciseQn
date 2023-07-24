@@ -1,0 +1,18 @@
+1. print number 0 to 50 by java7.
+2. List<String> names = Arrays.asList("Sam", "Peter","ballon","Sam");
+print unique data present in this list by java7
+------------------------------------
+1. Find people aged less or equal 18 using java7
+2. Then change implementation to find first 10 people using java7
+-----------------INT STREAM EXERCISE-------------------
+1.loop through people using IntStream  and print the each object.
+Think whether  you need to use range or range close.
+Estimated completion time: 2 to 3 minutes.
+------------------MAX EXERCISE-----------
+find the maximum number from  
+		 List<Integer> numbersList = Arrays.asList(5, 2, 3, 100, 23, 93, 99);
+------------------EXERCISE-----------
+		 
+		 
+		 
+		 
