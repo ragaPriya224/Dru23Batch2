@@ -11,3 +11,25 @@ For the below task, get use this entity https://github.com/ragaPriya224/Dru23Bat
 // 2. Then change implementation to find first 10 people(juz create diff method for this)
 
 
+---------------------25-7-2023
+
+
+1.Given a list of integers, find the total number of elements present in the list using Stream functions?
+
+2.Given the list of integers, find the first element of the list using Stream functions?
+3.convert the below data to uppercase and print each data
+ List<String> names = Arrays.asList("aa", "bb", "cc", "dd"); 
+HINT-> USE MAP,  METHOD REFERENCES TOO 
+
+**Have a list of string for cities like chennai, mumbai, bangalore , delhi ,chicago
+
+3.  print the cities that contains "ai"
+4 append  the word "metro" to all the cities 
+5 sort the cities**
+
+6.have a list of string with some datas and try to print the count of the datas having length greater than 3 
+--------------------------------------
+have a list of names.  Concatenate names into one String joined by comma - by java 7
+
+
+
