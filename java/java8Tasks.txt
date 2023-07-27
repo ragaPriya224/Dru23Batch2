@@ -45,6 +45,11 @@ public Double average(List<Integer> list) {
 // your code here
 }
 --------------------------------------
-
+Convert to Upper Case (Java 8 Lambdas and Streams)
+Write a method that converts all strings in a list to their upper case.
+public List<String> upperCase(List<String> list) {
+//your code
+}
+----------------------------------
 
 
