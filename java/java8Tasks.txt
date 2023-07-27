@@ -33,7 +33,18 @@ have a list of names.  Concatenate names into one String joined by comma - by ja
 
 -----------------------------
 
+Given a list of strings, write a method that returns a list of all strings that start with the letter 'a' (lower case) and have exactly 3 letters. TIP: Use Java 8 Lambdas and Streams API's.
 
+public List<String> search(List<String> list) {
+//your code
+}
+-----------------------
+Average Value (Java 8 Lambdas and Streams)
+Write a method that returns the average of a list of integers.
+public Double average(List<Integer> list) {
+// your code here
+}
+--------------------------------------
 
 
 
