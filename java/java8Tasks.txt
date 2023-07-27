@@ -12,7 +12,7 @@ For the below task, get use this entity https://github.com/ragaPriya224/Dru23Bat
 
 
 ---------------------25-7-2023
-
+BY JAVA8 
 
 1.Given a list of integers, find the total number of elements present in the list using Stream functions?
 
@@ -50,6 +50,30 @@ Write a method that converts all strings in a list to their upper case.
 public List<String> upperCase(List<String> list) {
 //your code
 }
-----------------------------------
+------------------USE JAVA 8 ----------------
+1. List<String> strList = Arrays.asList("abc", "", "bcd", "", "defg", "jk");
+
+Count the empty string 
+
+2. Count String whose length is more than three
+
+3. Count number of String which starts with "a"
+
+4. Remove all empty Strings from List
+
+5.Create a List with String more than 2 characters
+
+6. Convert String to uppercase and Join them with coma
+
+7.Create a List of the square of all distinct numbers
+
+8.Get count, min, max, sum, and the average for numbers
+---------------------JAVA8---------------------
+
+solve the below problems with person/ employee as data's
+if u don't have the field mentioned in question, try for some other field
+
+1. How many male and female employees are there in the organization?
+
 
 
