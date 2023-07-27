@@ -1,0 +1,88 @@
+//1. print number 0 to 50 by java7.
+
+//2. List<String> names = Arrays.asList("Sam", "Peter","ballon","Sam");
+
+// print unique data present in this list by java7
+
+For the below task, get use this entity https://github.com/ragaPriya224/Dru23Batch2/blob/master/java/Person.java  and hardcode the datas. 
+
+//1. Find people aged less or equal 18
+
+// 2. Then change implementation to find first 10 people(juz create diff method for this)
+
+
+---------------------25-7-2023
+BY JAVA8 
+
+1.Given a list of integers, find the total number of elements present in the list using Stream functions?
+
+2.Given the list of integers, find the first element of the list using Stream functions?
+3.convert the below data to uppercase and print each data
+ List<String> names = Arrays.asList("aa", "bb", "cc", "dd"); 
+HINT-> USE MAP,  METHOD REFERENCES TOO 
+
+**Have a list of string for cities like chennai, mumbai, bangalore , delhi ,chicago
+
+3.  print the cities that contains "ai"
+4 append  the word "metro" to all the cities 
+5 sort the cities**
+
+6.have a list of string with some datas and try to print the count of the datas having length greater than 3 
+--------------------------------------
+have a list of names.  Concatenate names into one String joined by comma - by java 7
+
+-----------------------------
+
+Given a list of strings, write a method that returns a list of all strings that start with the letter 'a' (lower case) and have exactly 3 letters. TIP: Use Java 8 Lambdas and Streams API's.
+
+public List<String> search(List<String> list) {
+//your code
+}
+-----------------------
+Average Value (Java 8 Lambdas and Streams)
+Write a method that returns the average of a list of integers.
+public Double average(List<Integer> list) {
+// your code here
+}
+--------------------------------------
+Convert to Upper Case (Java 8 Lambdas and Streams)
+Write a method that converts all strings in a list to their upper case.
+public List<String> upperCase(List<String> list) {
+//your code
+}
+------------------USE JAVA 8 ----------------
+1. List<String> strList = Arrays.asList("abc", "", "bcd", "", "defg", "jk");
+
+Count the empty string 
+
+2. Count String whose length is more than three
+
+3. Count number of String which starts with "a"
+
+4. Remove all empty Strings from List
+
+5.Create a List with String more than 2 characters
+
+6. Convert String to uppercase and Join them with coma
+
+7.Create a List of the square of all distinct numbers
+
+8.Get count, min, max, sum, and the average for numbers
+---------------------JAVA8---------------------
+
+solve the below problems with person/ employee as data's
+if u don't have the field mentioned in question, try for some other field
+1. group the employees based on the gender and print the records
+
+2. How many male and female employees are there in the organization?
+
+3.List down the employees of each department.
+
+4. Get the Names of employees who joined after 2022.
+
+5. Write a program to print the names of all departments in the organization.
+
+6. How many male and female employees are there in the testing team?
+
+
+
