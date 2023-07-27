@@ -1,10 +1,10 @@
-package main.exercise.section0._intStream;
+package practice.java8Demo.exercise.section0._intStream;
 
 import java.util.List;
 import java.util.stream.IntStream;
 
-import main.entity.Person;
-import main.repository.PersonRepository;
+import practice.java8Demo.entity.Person;
+import practice.java8Demo.repository.PersonRepository;
 
 //loop through people using IntStream  and print the each object.
 //Think whether  you need to use range or range close.

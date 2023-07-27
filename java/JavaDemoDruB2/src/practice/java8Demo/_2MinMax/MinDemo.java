@@ -30,10 +30,4 @@ public class MinDemo {
 
 	}
 
-
-	//	public void max()   {
-	//		final List<Integer> numbers = ImmutableList.of(1, 2, 3, 100, 23, 93, 99);
-	//
-	//	}
-
 }

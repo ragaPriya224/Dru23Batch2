@@ -24,8 +24,6 @@ public class FilterDemo {
 		.forEach(System.out::println);
 		Predicate<Car> carPredicate = car -> car.getPrice() <2000;
 //		in line 21, in filter, carPredicate can be passed as argument
-		
-	
 	}
 
 }

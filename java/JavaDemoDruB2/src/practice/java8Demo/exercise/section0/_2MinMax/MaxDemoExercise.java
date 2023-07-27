@@ -1,4 +1,4 @@
-package main.exercise.section0._2MinMax;
+package practice.java8Demo.exercise.section0._2MinMax;
 
 import java.util.Arrays;
 import java.util.Comparator;
