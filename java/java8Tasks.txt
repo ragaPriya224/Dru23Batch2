@@ -72,8 +72,17 @@ Count the empty string
 
 solve the below problems with person/ employee as data's
 if u don't have the field mentioned in question, try for some other field
+1. group the employees based on the gender and print the records
 
-1. How many male and female employees are there in the organization?
+2. How many male and female employees are there in the organization?
+
+3.List down the employees of each department.
+
+4. Get the Names of employees who joined after 2022.
+
+5. Write a program to print the names of all departments in the organization.
+
+6. How many male and female employees are there in the testing team?
 
 
 
