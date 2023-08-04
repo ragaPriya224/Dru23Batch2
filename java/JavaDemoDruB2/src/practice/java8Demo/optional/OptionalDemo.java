@@ -24,5 +24,8 @@ public class OptionalDemo {
 			System.out.println("value not there");
 		}
 	}
+	public void m2() {
+		
+	}
 
 }

@@ -13,7 +13,7 @@ public class CarRepository {
 		Car p1 = new Car(1,"toyota","highlander","blue",2008,20000.55);
 		Car p2 = new Car(2,"toyota","solara","blue",2009,5000.55);
 		Car p3 = new Car(333,"ford", "expedition","white",2022,500000.70);
-		Car p4 = new Car(55,"bmw", "expedition","red",2022,4000.70);
+		Car p4 = new Car(55,"bmw", "expedition","red",2022,400.70);
 //		Car p5 = new Car(6,"baahu","bali","bhubali.a@www.com", "Female", 6);
 //		Car p6 = new Car(7,"great","hulk","hulk.r@aa.com", "Male",77 );
 //		Car p7 = new Car(888,"power","rangers","rangers@pow.com","Male", 5);

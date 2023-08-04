@@ -1,4 +1,4 @@
-package main._10_joinString;
+package practice.java8Demo._10_joinString;
 
 import java.util.Arrays;
 import java.util.List;
