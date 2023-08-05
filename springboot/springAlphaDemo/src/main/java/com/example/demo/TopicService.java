@@ -1,26 +1,33 @@
 package com.example.demo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
 @Service
 public class TopicService {
-
-	public Topic getTopic() {
-		// TODO Auto-generated method stub
-		Topic t = new Topic("11","basic english",4);
-		return t;
+	
+	List<Topic> topicList  = Arrays.asList(
+			new Topic("11","basic english",4),
+			new Topic("14","basic japanese",5),
+			new Topic("100","basic telugu",1)
+			);
+	
+	public Topic getTopic(String topicId) {
+		return topicList.stream().filter(t -> t.getId().equals(topicId))
+		.findFirst().get();
 	}
+	
 	public List<Topic> getAllTopic() {
-		Topic t = new Topic("11","basic english",4);
-		Topic t2 = new Topic("14","basic japanese",5);
-		List<Topic> topicList  = new ArrayList<>();
-		topicList.add(t);
-		topicList.add(t2);
 		return topicList;
 	}
-	
-	
+
+	public void deleteTopic(String id) {
+		// TODO Auto-generated method stub
+		topicList.removeIf(t -> t.getId().equals(id));
+	}
+
+
 }
