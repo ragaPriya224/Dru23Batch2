@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "32175e8c-99cb-4f4b-8319-bc94e29c6c38",
+		"name": "TopicRequestCollection",
+		"description": "all -> get, put, post ,delete request are here with sample data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28249867"
+	},
+	"item": [
+		{
+			"name": "Get all topics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topics",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topics"
+					]
+				},
+				"description": "fetching all the records"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Topic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"java\",\r\n        \"subTopic\": 55\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topic",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topic"
+					]
+				},
+				"description": "adding a particular record "
+			},
+			"response": []
+		},
+		{
+			"name": "Get a particular record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topic/11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topic",
+						"11"
+					]
+				},
+				"description": "fetching a particular record with get method"
+			},
+			"response": []
+		},
+		{
+			"name": "update record",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"221\",\r\n    \"name\": \"teluguUPD spoken\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topic/221",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topic",
+						"221"
+					]
+				},
+				"description": "updating a particular record"
+			},
+			"response": []
+		},
+		{
+			"name": "delete a record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topic/111",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topic",
+						"111"
+					]
+				},
+				"description": "deleting a particular record"
+			},
+			"response": []
+		},
+		{
+			"name": "pagination and sorting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topics/page?pageNo=1&sort=name",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topics",
+						"page"
+					],
+					"query": [
+						{
+							"key": "pageNo",
+							"value": "1"
+						},
+						{
+							"key": "sort",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/search?query=beginner",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "beginner"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
