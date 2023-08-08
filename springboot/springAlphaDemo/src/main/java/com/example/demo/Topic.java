@@ -1,13 +1,20 @@
 package com.example.demo;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name ="Subject")
 public class Topic {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String id;
+//	@Column(name = "tname",unique= true,length =10)
 	private String name;
 	private int subTopic;
 	

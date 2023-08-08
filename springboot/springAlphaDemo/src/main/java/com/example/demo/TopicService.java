@@ -60,6 +60,9 @@ public class TopicService {
 				Direction.DESC,//desc
 				sortBy.orElse("id")));//based on column 
 	}
-
+	
+public List<Topic> searchTopic(String query){
+	return topicRepository.searchTopic(query);
+}
 
 }

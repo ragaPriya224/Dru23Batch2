@@ -48,4 +48,12 @@ public class TopicController {
 			@RequestParam("sort") Optional<String> sortBy){
 		return topicService.getTopicByPage(pageParam,sortBy);
 	}
+	
+	@GetMapping("/topic/search")
+	public  List<Topic>   searchTopic(@RequestParam("query") String query) {
+		return topicService.searchTopic(query);
+	}
+
+	
+	
 }
