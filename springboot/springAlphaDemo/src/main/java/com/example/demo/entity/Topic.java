@@ -12,10 +12,11 @@ import jakarta.persistence.Table;
 public class Topic {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String id;
 //	@Column(name = "tname",unique= true,length =10)
 	private String name;
+	
 	private int subTopic;
 	
 	public Topic() {
