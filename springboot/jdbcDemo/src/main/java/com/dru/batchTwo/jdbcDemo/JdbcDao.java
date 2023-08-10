@@ -1,10 +1,13 @@
 package com.dru.batchTwo.jdbcDemo;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
@@ -64,6 +67,26 @@ public class JdbcDao {
 		if(output == 1) {
 			log.info(" course is deleted now with "+ id);
 		}
+	}
+	public   int[] batchUpdateUsingJdbcTemplate( List<Course> courseList) {
+		return jdbcTemplate.batchUpdate("INSERT INTO course VALUES(?,?,?,?)",new BatchPreparedStatementSetter() {
+			@Override
+			public void setValues(PreparedStatement ps, int i) throws SQLException{
+				System.out.println("i is" +i);
+				if(i<courseList.size()) {
+					ps.setInt(1, courseList.get(i).getCourseId());
+					ps.setString(2, courseList.get(i).getTitle());
+					ps.setString(3, courseList.get(i).getDescription());
+					ps.setString(4, courseList.get(i).getLink());
+				}
+				System.out.println(ps);
+			}
+			@Override
+			public int getBatchSize() {
+				System.out.println(" baatchhhh");
+				return courseList.size();
+			}
+		});
 	}
 	
 
