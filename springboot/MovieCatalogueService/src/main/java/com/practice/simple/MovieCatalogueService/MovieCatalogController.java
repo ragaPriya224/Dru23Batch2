@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class MovieCatalogController {
@@ -16,9 +17,10 @@ public class MovieCatalogController {
 		//1 -> get all rated movie id's
 		List<Rating> ratings = Arrays.asList(new Rating("222",4),
 				new Rating("41",5));
-
+		RestTemplate rt = new RestTemplate();
 		return ratings.stream().map(rating ->{
-			return new CatalogItem("Transformer","test",4);
+			Movie movie =rt.getForObject("https://localhost:8082/movie/4123", Movie.class);
+			return new CatalogItem(movie.getName(),"test",rating.getRating());
 		}).collect(Collectors.toList());
 	}
 }
