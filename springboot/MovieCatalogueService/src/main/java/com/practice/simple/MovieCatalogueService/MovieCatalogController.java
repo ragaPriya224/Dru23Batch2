@@ -19,7 +19,7 @@ public class MovieCatalogController {
 				new Rating("41",5));
 		RestTemplate rt = new RestTemplate();
 		return ratings.stream().map(rating ->{
-			Movie movie =rt.getForObject("https://localhost:8082/movie/4123", Movie.class);
+			Movie movie =rt.getForObject("https://localhost:8082/movie/"+rating.getMoveiId(), Movie.class);
 			return new CatalogItem(movie.getName(),"test",rating.getRating());
 		}).collect(Collectors.toList());
 	}
