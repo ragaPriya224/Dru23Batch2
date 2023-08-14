@@ -9,20 +9,32 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 @RestController
 public class MovieCatalogController {
-	
-//	@Autowired
-//	RestTemplate rt;
 
+	//	@Autowired
+	//	RestTemplate rt;
+	@Autowired
+	WebClient.Builder webclientBuilder;
+	
 	@GetMapping("/catalog/{userId}")
 	public List<CatalogItem> getCatalog(@PathVariable String userId){
 		//1 -> get all rated movie id's
 		List<Rating> ratings = Arrays.asList(new Rating("222",4),
 				new Rating("41",5));
 		return ratings.stream().map(rating ->{
-			Movie movie =rt.getForObject("https://localhost:8082/movie/"+rating.getMoveiId(), Movie.class);
+
+			
+		Movie movie = 	webclientBuilder.build()
+			.get()
+			.uri("http://localhost:8082/movie/"+rating.getMoveiId())
+			.retrieve()//fetch
+			.bodyToMono(Movie.class)
+			.block();
+			
+			//			Movie movie =rt.getForObject("https://localhost:8082/movie/"+rating.getMoveiId(), Movie.class);
 			return new CatalogItem(movie.getName(),"test",rating.getRating());
 		}).collect(Collectors.toList());
 	}
