@@ -13,8 +13,8 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class MovieCatalogController {
 	
-	@Autowired
-	RestTemplate rt;
+//	@Autowired
+//	RestTemplate rt;
 
 	@GetMapping("/catalog/{userId}")
 	public List<CatalogItem> getCatalog(@PathVariable String userId){

@@ -11,9 +11,9 @@ public class MovieCatalogueServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MovieCatalogueServiceApplication.class, args);
 	}
-	@Bean
-	public RestTemplate getRestTemplate() {
-		return new RestTemplate();
-
-	}
+//	@Bean
+//	public RestTemplate getRestTemplate() {
+//		return new RestTemplate();
+//
+//	}
 }
