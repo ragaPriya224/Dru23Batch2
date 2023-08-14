@@ -14,27 +14,16 @@ import org.springframework.web.reactive.function.client.WebClient;
 @RestController
 public class MovieCatalogController {
 
-	//	@Autowired
-	//	RestTemplate rt;
 	@Autowired
-	WebClient.Builder webclientBuilder;
-	
+	RestTemplate rt;
+
 	@GetMapping("/catalog/{userId}")
 	public List<CatalogItem> getCatalog(@PathVariable String userId){
 		//1 -> get all rated movie id's
 		List<Rating> ratings = Arrays.asList(new Rating("222",4),
 				new Rating("41",5));
 		return ratings.stream().map(rating ->{
-
-			
-		Movie movie = 	webclientBuilder.build()
-			.get()
-			.uri("http://localhost:8082/movie/"+rating.getMoveiId())
-			.retrieve()//fetch
-			.bodyToMono(Movie.class)
-			.block();
-			
-			//			Movie movie =rt.getForObject("https://localhost:8082/movie/"+rating.getMoveiId(), Movie.class);
+			Movie movie =rt.getForObject("https://localhost:8082/movie/"+rating.getMoveiId(), Movie.class);
 			return new CatalogItem(movie.getName(),"test",rating.getRating());
 		}).collect(Collectors.toList());
 	}
