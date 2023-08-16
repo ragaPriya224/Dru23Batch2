@@ -1,0 +1,162 @@
+//FI interface implementation by java7 -> creation of impl class
+//FI  interface implementation by java8 -> lambda expression 
+
+
+interface Interf{
+public void m1();
+}
+
+class Test{
+public s v main(String[] args){
+Interf i =() ->{
+       s.out("lambda impl");
+;;;;
+	}
+i.m1();//lambda expression for functional interface
+}
+}
+
+//instead of lambda expression, we can go for method referecnce
+
+interface Interf{
+public void m1();
+}
+class Test{
+public static void m2(){
+s.out("method reference");
+}
+
+public static void main(String[] args){
+Interf i = Test::m2;// no open close bracket
+i.m1();//internally m2 method is called
+//m1 method refers m2
+}
+
+}
+
+// here  no need to give new implementation, already existing implementation can be used. (referred)
+//code reusability :)
+note, here static method
+
+//condition: both method should have same arg type
+
+
+
+
+--------------------------------------
+----------------------------------------------
+
+SYNTAX FOR METHOD REFERENCE:
+
+static:
+    	className::methodname
+       eg: Test::m2
+
+instance:
+        ObjefctRef::methodname
+       eg: Test t = new Test();
+t::m2;
+
+
+----------------------------------------------------------
+
+
+SYNTAX:
+
+
+STATIC : 
+ classname::methodname
+eg:Test::m2
+
+
+instance:
+
+objectRef::methodname
+Eg: Test t = new Test();
+t::m2;
+
+
+
+constructor ref
+
+Classname::new 
+
+Eg:Sample::new 
+
+
+public void m1(){
+
+for(int i = 0; i<10;i++;){
+sysout("child");
+}
+}
+p s vm (){
+
+Test t = new Test();
+Runnable r = t::m1;
+Thread t1 = new Thread(r);
+t1.start();
+
+}
+
+
+----------constructor reference----------
+
+class Test(){
+Test(){
+s.out("cnstructor");
+}
+}
+
+interface Interf{
+public Test get();
+}
+
+class Demo(){
+main(){
+Interf i = Test::new;
+Test t = i.get();
+}
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
