@@ -22,7 +22,7 @@ public class MovieCatalogController {
 		//1 -> get all rated movie id's
 //		List<Rating> ratings = Arrays.asList(new Rating("222",4),
 //				new Rating("41",5));
-		UserRating ur = rt.getForObject("http:/rating-service/users/"+userId, UserRating.class);
+		UserRating ur = rt.getForObject("http://rating-service/users/"+userId, UserRating.class);
 		
 		
 		return ur.getUserRating().stream().map(rating ->{
