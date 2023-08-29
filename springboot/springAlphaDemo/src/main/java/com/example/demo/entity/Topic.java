@@ -1,10 +1,11 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.Column;
+import java.util.List;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -18,6 +19,9 @@ public class Topic {
 	private String name;
 	
 	private int subTopic;
+	
+    @OneToMany(mappedBy="topic" ,cascade = CascadeType.REMOVE)
+	private List<Course> course;
 	
 	public Topic() {
 	}
@@ -43,6 +47,16 @@ public class Topic {
 	}
 	public void setSubTopic(int subTopic) {
 		this.subTopic = subTopic;
+	}
+	public List<Course> getCourse() {
+		return course;
+	}
+	public void setCourse(List<Course> course) {
+		this.course = course;
+	}
+	@Override
+	public String toString() {
+		return "Topic [id=" + id + ", name=" + name + ", subTopic=" + subTopic + ", course=" + course + "]";
 	}
 	
 }

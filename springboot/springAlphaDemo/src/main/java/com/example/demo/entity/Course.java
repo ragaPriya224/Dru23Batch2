@@ -13,7 +13,7 @@ public class Course {
 	private String description;
 	
 //many course to asingle topic
-	@ManyToOne
+	@ManyToOne()
 	Topic topic;
 	
 	public Course(String id, String name, String description,String topicId) {
@@ -50,6 +50,10 @@ public class Course {
 	}
 	public void setTopic(Topic topic) {
 		this.topic = topic;
+	}
+	@Override
+	public String toString() {
+		return "Course [id=" + id + ", name=" + name + ", description=" + description + ", topic=" + topic + "]";
 	}
 	
 	
